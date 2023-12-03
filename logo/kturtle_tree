@@ -1,0 +1,30 @@
+kturtle-script-v1.0
+@(reset)
+@(goy) 0
+$levels = @(ask) "Size of tree"
+@(turnright) 135
+@(repeat) $levels {
+  @(forward) 50
+  @(turnright) 135
+  @(forward) 20
+  @(turnleft) 135
+}
+@(center)
+@(goy) 0
+@(turnright) 90
+@(repeat) $levels {
+  @(forward) 50
+  @(turnleft) 135
+  @(forward) 20
+  @(turnright) 135
+}
+@(turnleft) 135
+@(forward) 12*$levels
+@(turnright) 90
+@(forward) 30
+@(turnleft) 90
+@(forward) 8 * $levels
+@(turnleft) 90
+@(forward) 30
+@(turnright) 90
+@(forward) 12*$levels

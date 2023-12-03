@@ -1,1 +1,4 @@
 .vscode
+target/
+c/christmastree
+rust/santa/Cargo.lock
