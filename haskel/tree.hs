@@ -1,3 +1,4 @@
+import System.Environment
 
 printchar :: String -> Int -> String
 printchar x n = if n > 0 then x ++ printchar x (n-1) else ""
@@ -10,6 +11,6 @@ printtree n levels = printtree (n-1) levels ++ "\n" ++ printline n levels
 printfull levels = printtree levels levels ++ "\n" ++ printchar " " (levels -1) ++ "|" 
 
 main :: IO ()
-main = putStrLn (printfull 10)
+main = do x <- getArgs; putStrLn (printfull (read $ head x :: Int))
 
 
