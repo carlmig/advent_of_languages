@@ -1,4 +1,6 @@
 .vscode
+.o
+tree
 target/
 c/christmastree
 rust/santa/Cargo.lock
