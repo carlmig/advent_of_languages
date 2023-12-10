@@ -4,3 +4,5 @@ tree
 target/
 c/christmastree
 rust/santa/Cargo.lock
+.dart_tool/
+.exe
